@@ -8,6 +8,7 @@ export default function Box() {
             <div className="key">key : {random}</div>
             <div className="val">val : {val}</div>
         </div>
+        <div></div>
         </>
     );
 }
