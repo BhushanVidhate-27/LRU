@@ -3,10 +3,11 @@ import '../styles/simulate.css';
 
 
 export default function Table() {
+    const API = "https://lru-backend-3yh6.onrender.com";
     const [data, setData] = useState([]);
 
     async function loadData() {
-        const res = await fetch("/lru");
+        const res = await fetch(`${API}/lru`);
 
         const json = await res.json();
 
@@ -22,7 +23,7 @@ export default function Table() {
 
     const handleDelete = async (key) => {
         try {
-            const res = await fetch(`/lru/${key}`, {
+            const res = await fetch(`${API}/lru/${key}`, {
                 method: "DELETE",
             });
 
