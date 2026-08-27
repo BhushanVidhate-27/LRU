@@ -3,6 +3,7 @@ import { useState } from "react";
 import "../styles/form.css";
 
 export default function Formbar() {
+    const API = "https://lru-backend-3yh6.onrender.com";
     const [popupData, setPopupData] = useState(null);
     const [statsData, setStatsData] = useState(null);
 
@@ -16,7 +17,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch("https://lru-backend-3yh6.onrender.com/lru", {
+            const res = await fetch(`${API}/lru`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -42,7 +43,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch(`https://lru-backend-3yh6.onrender.com/lru/${inpKey2}`);
+            const res = await fetch(`${API}/lru/${inpKey2}`);
             const data = await res.json();
 
             console.log(data);
@@ -58,7 +59,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch("https://lru-backend-3yh6.onrender.com/lru/stats");
+            const res = await fetch(`${API}/lru/stats`);
             const data = await res.json();
 
             console.log(data);
@@ -74,7 +75,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch(`https://lru-backend-3yh6.onrender.com/lru/capacity/${newCap}`, {
+            const res = await fetch(`${API}/lru/capacity/${newCap}`, {
                 method: "POST",
             });
 
