@@ -1,4 +1,5 @@
 #!/bin/bash
-cd client
+
 npm install
-npm run build
+g++ LRU.cpp -o lru
+node index.js
