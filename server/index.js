@@ -1,10 +1,19 @@
 import express from "express";
 import fs from 'fs';
+const cors = require("cors");
 import { spawn } from "child_process";
 export const app = express();
 let port = 8080;
 let cppProcess;
+
+app.use(cors({
+    origin: "https://lru-bum3.vercel.app",
+    methods: ["GET", "POST"],
+    credentials: false,
+}));
+
 app.use(express.json());
+
 
 const asyncHandler = fn =>
     (req, res, next) =>
