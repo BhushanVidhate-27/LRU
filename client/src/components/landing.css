@@ -1,0 +1,17 @@
+/* ___________________________________HERO___________________________________ */
+
+.all-page {
+    height: auto;
+    display: block;
+}
+
+.hero {
+    height: 100vh;
+}
+.second {
+    height: 100vh;
+}
+.third {
+    height: 100vh;
+}
+

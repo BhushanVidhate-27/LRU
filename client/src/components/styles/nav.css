@@ -1,0 +1,95 @@
+* {
+  font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+body, html {
+  background-color: black;
+  color: white;
+}
+
+/* ===========================================logo====================================== */
+.logo {
+  font-size: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav h3::selection {
+  color: rgb(175, 9, 0);
+}
+
+.nav::selection {
+  color: rgb(0, 0, 0);
+}
+/* ===========================================button from web====================================== */
+
+
+
+.home-btn {
+  height: 30px;
+  width: 120px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.arrow {
+  /* display: none; */
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+
+.home-btn:hover {
+  color: white;
+}
+
+.home-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.home-btn:active {
+  transform: scale(0.9);
+}
+
+/* ===========================================Horizontal rule====================================== */
+.hr {
+  width: 100%;
+  border: 1px solid rgba(76, 76, 76, 0.442);
+}

@@ -1,0 +1,64 @@
+/* ===========================
+   FAQ SECTION
+=========================== */
+
+.defn {
+    width: min(1400px, 95%);
+    height: 100vh;
+
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+
+    align-content: start;
+}
+
+/* FAQ Card */
+
+.q1 {
+    border: 1px solid;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,.05);
+    transition: .25s ease;
+}
+
+.q1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(0,0,0,.08);
+}
+
+.question {
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid;
+}
+
+.question h3 {
+    margin: 0;
+    font-size: 1.15rem;
+    line-height: 1.4;
+}
+
+.answer {
+    padding: 1.25rem 1.5rem;
+}
+
+.answer p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+/* Mobile */
+
+@media (max-width:900px){
+
+    .defn{
+        grid-template-columns:1fr;
+        height:auto;
+        padding:1rem;
+    }
+
+}

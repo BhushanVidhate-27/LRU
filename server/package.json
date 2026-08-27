@@ -1,0 +1,24 @@
+{
+  "name": "lru-server",
+  "version": "1.0.0",
+  "description": "Backend for the LRU Project",
+  "homepage": "https://github.com/BhushanVidhate-27/LRU#readme",
+  "bugs": {
+    "url": "https://github.com/BhushanVidhate-27/LRU/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BhushanVidhate-27/LRU.git"
+  },
+  "license": "ISC",
+  "author": "Bhushan Vidhate",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}

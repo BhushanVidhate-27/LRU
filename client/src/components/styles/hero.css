@@ -1,0 +1,77 @@
+.allHero {
+    font-size: 2.1rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 6rem;
+    overflow-x: scroll;
+}
+
+.scroll-icon {
+    font-size: 1 rem;
+    text-align: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* link list */
+
+.ll {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: first baseline ;
+}
+
+/* arrow */
+
+.arrow-line {
+    text-align: end;
+    align-self: center;
+    height: 1px;
+    width: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+}
+.arrow-head {
+    font-size: 30px;
+    position: relative;
+    top: 12px;
+}
+
+/* page text ::selection */
+
+.hero::selection {
+    color: cornflowerblue;
+}
+.arrow-head::selection {
+    color: black;
+}
+
+/* button */
+.hero-btn {
+    margin-top: 5rem;
+    padding: 0 1rem;
+    height: 2rem;
+    text-align: center;
+    justify-self: center;
+    border: 3px solid rgb(131, 7, 7);
+    padding-top: 1rem;
+
+    border-radius: 1rem;
+}
+
+/* basic style done */
+
+.hero-btn:hover {
+    cursor: pointer;
+}
