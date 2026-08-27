@@ -16,7 +16,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch("/lru", {
+            const res = await fetch("https://lru-backend-3yh6.onrender.com/lru", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -42,7 +42,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch(`/lru/${inpKey2}`);
+            const res = await fetch(`https://lru-backend-3yh6.onrender.com/lru/${inpKey2}`);
             const data = await res.json();
 
             console.log(data);
@@ -58,7 +58,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch("/lru/stats");
+            const res = await fetch("https://lru-backend-3yh6.onrender.com/lru/stats");
             const data = await res.json();
 
             console.log(data);
@@ -74,7 +74,7 @@ export default function Formbar() {
         e.preventDefault();
 
         try {
-            const res = await fetch(`/lru/capacity/${newCap}`, {
+            const res = await fetch(`https://lru-backend-3yh6.onrender.com/lru/capacity/${newCap}`, {
                 method: "POST",
             });
 
