@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import animationData from "./scroll.json";
+import animationData from "./Scroll.json";
 
 // const Lottie = LottieModule.default;
 
