@@ -1,6 +1,6 @@
 import express from "express";
 import fs from 'fs';
-const cors = require("cors");
+import cors from 'cors';
 import { spawn } from "child_process";
 export const app = express();
 let port = 8080;
